@@ -1,0 +1,117 @@
+@font-face {
+    font-family: 'Imprebooks';
+    src: url(/font/ImprebooksFont.otf);
+    font-weight: bold;
+}
+h1{
+    font-family: 'Imprebooks';
+    font-size: 50px;
+}
+.FormatoTitulo {
+
+    text-align: center;
+    font-family: 'Imprebooks';
+    font-size: 50px;
+    color: rgba(210, 2, 148, 0.668);
+    justify-content: center;
+    padding-top: 0px;
+
+}
+
+.logo {
+    max-width: 200px;
+}
+
+header {
+    
+    display: block;
+    justify-content: center;
+
+    a {
+        display: flex;
+        justify-content: center;
+    }
+
+    nav {
+        display: flex;
+
+        
+
+        justify-content: center;
+
+
+        ul {
+           
+
+            li {
+                display: inline-block;
+                background-color: #f79ce2;
+                padding: 25px;
+                a {
+
+                    font-family: 'pacifico';
+                    color: rgba(210, 2, 148, 0.668);
+                    font-size: 35px;
+                    text-decoration: none;
+                    padding-inline: 25px;
+                    
+
+
+                }
+            }
+        }
+    }
+}
+.boton-pop:hover{
+    font-family: 'pacifico';
+    color: rgba(7, 7,  7, 0.668);
+    font-size: 35px;
+    text-decoration: none;
+    padding-inline: 25px;
+}
+
+
+h2 {
+    font-family: 'Pacifico';
+    color: rgba(210, 2, 148, 0.668);
+    font-size: 35px;
+}
+
+h3 {
+    font-family: 'Pacifico';
+    color: rgba(210, 2, 148, 0.668);
+}
+
+.textespecial {
+    font-family: 'Imprebooks';
+    font-size: 30px;
+    text-align: center;
+
+}
+
+body {
+   
+
+    main {
+
+        text-align: center;
+    }
+
+    footer {
+        text-align: center;
+        font-style: oblique;
+        background-color: #f79ce2;
+    }
+}
+
+.personaliza {
+    width: 300px;
+    height: 300px;
+}
+
+ol {
+    font-family: 'Pacifico';
+    color: rgba(210, 2, 148, 0.668);
+    font-size: 20px;
+    text-align: left;
+}
