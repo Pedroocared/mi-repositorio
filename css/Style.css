@@ -20,7 +20,7 @@ header nav {
 header nav img {
   width: 200px;
   height: 200px;
-  transition: 2s;
+  transition: 1s;
 }
 header nav img:hover {
   transform: scale(1.5);
@@ -28,7 +28,7 @@ header nav img:hover {
 header nav ul {
   margin-top: 80px;
   text-align: center;
-  transition: 0.5s;
+  transition: 1s;
 }
 header nav ul li {
   display: inline;
@@ -41,7 +41,7 @@ header nav ul li a {
   padding-inline: 5px;
 }
 header nav ul:hover {
-  transform: scale(1.4);
+  transform: scale(1.2);
 }
 header nav .logo {
   grid-column: 1/span 2;
@@ -122,6 +122,76 @@ main section h2 {
 }
 main section div img {
   width: 200px;
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  header nav {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 60px 60px;
+  }
+  header nav img {
+    display: inline;
+    width: 100%;
+    margin: 30px;
+    justify-content: center;
+    width: 150px;
+    height: 150px;
+  }
+  header nav ul {
+    padding: 50px;
+    text-align: center;
+  }
+  header nav ul li {
+    display: inline;
+  }
+  header nav ul li a {
+    display: inline;
+    font-family: "pacifico";
+    color: rgba(210, 2, 148, 0.668);
+    font-size: 1rem;
+    padding-inline: 5px;
+  }
+  header nav .logo {
+    display: flex;
+    justify-content: center;
+    grid-column: 1/span 2;
+    grid-row: 1/span 2;
+    max-width: 100%;
+  }
+  header nav .navegacion {
+    grid-column: 1/span 2;
+    grid-row: 2/span 3;
+  }
+  .tabletframe {
+    display: none;
+  }
+  .gridContentContac {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .gridContentContac .gridItem {
+    margin: 25px;
+    padding: 25px;
+    transition: 0.5s;
+  }
+  .gridContentContac .gridItem:hover {
+    transform: scale(1.4);
+  }
+  .gridcontent_pers {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 25px;
+  }
+  .gridcontent_pers .gridresponmin_item {
+    grid-column: 1/span 2;
+    grid-row: auto;
+  }
+  .gridcontent_pers .gridresponmin_item img {
+    width: 300px;
+    max-width: auto;
+  }
 }
 
 /*# sourceMappingURL=Style.css.map */

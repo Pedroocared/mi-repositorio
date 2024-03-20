@@ -17,24 +17,20 @@ $padd-textoa: 5px;
 
 }
 
-
 @mixin imagen{
     width: $size-img-gen;
     height: $size-img-gen;
-    transition: 2s;
+    transition: 1s;
     &:hover {
         transform: scale(1.5);
     }
 }
-
-
 
 header{
     nav{
         display: grid;
         grid-template-columns: repeat(8, 1fr);
         grid-template-rows: 1fr;
-
         img {
             @include imagen();
         }
@@ -44,29 +40,22 @@ header{
             li {
                 display: inline;
                 margin: 10px;
-
-                a {     
-                                   
-                   @include textoa(); 
-       
+                a {                
+                   @include textoa();
                 }
-
             }
-            transition: 0.5s;
-            &:hover{
-             transform: scale(1.4);
-            }  
+            transition: 1s;
+            &:hover {
+                transform: scale(1.2);
+            }
         }
         .logo{
             grid-column: 1 /  span 2;
             grid-row: 1 / span 2;
-
         }
         .navegacion{
             grid-column: 2 / span 6;
             grid-row: 1 / span 2;
-
         }
     }
-  
 }
