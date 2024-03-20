@@ -1,28 +1,44 @@
+//VARIABLES
+$size-img-logo:200px;
+$fuente-h2-3:'pacifico';
+$size-texto-2-3: 35px;
+$color-textonav: rgba(210, 2, 148, 0.668);
+$align-centertext:center;
+$size-img-gen:200px;
+$padd-textoa: 5px;
+
+
+//MIXIN
+@mixin textoa {
+    font-family: $fuente-h2-3;
+    color: $color-textonav;
+    font-size:$size-texto-2-3;
+    padding-inline: $padd-textoa;
+}
+
+@mixin imagen{
+    width: $size-img-gen;
+    height: $size-img-gen
+}
+
+
+
 header{
     nav{
         display: grid;
         grid-template-columns: repeat(8, 1fr);
         grid-template-rows: 1fr;
-
         img {
-            width: 200px;
-            height: 200px;
+            @include imagen();
         }
         ul{
             margin-top: 80px;
-            text-align: center;
-
+            text-align: $align-centertext;
             li {
                 display: inline;
                 margin: 10px;
-
-                a {
-                    
-                    font-family: 'pacifico';
-                    color: rgba(210, 2, 148, 0.668);
-                    font-size: 35px;
-                    text-decoration: none;
-                    padding-inline: 5px;
+                a {                    
+                   @include textoa();     
                 }
             }
         }

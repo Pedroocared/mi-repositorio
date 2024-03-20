@@ -1,14 +1,43 @@
+//VARIABLES
+$display-flexbody: flex;
+$align-centertext:center;
+$color-texto-fondo: #f79ce2;
+$ancho-horizon: 100%;
+$Style-font: 'oblique';
+$alto-main: 850px;
+$url-background:url(/img/fondo_imprebook.png);
+$background-posicion: cover;
+$difle-direccion: column;
+
+@font-face {
+    font-family: 'Imprebooks';
+    src: url(/font/ImprebooksFont.otf);
+    font-weight: bold;
+}
+
+//MIXIN 
+@mixin m-footer{
+    width: $ancho-horizon;
+    text-align: $align-centertext;
+    font-style: $Style-font;
+    background-color: $color-texto-fondo;
+}
+@mixin m-body{
+    display: $display-flexbody;
+    flex-direction: $difle-direccion; /* Cambiado a columna para alinear verticalmente */
+    align-items: $align-centertext; /* Centra horizontalmente todo el contenido */
+    background-image: $url-background ;
+    background-size: $background-posicion;
+    background-position: $align-centertext;
+}
+
+
 body {
-    display: flex;
-    flex-direction: column; /* Cambiado a columna para alinear verticalmente */
-    align-items: center; /* Centra horizontalmente todo el contenido */
-    background-image: url(/img/fondo_imprebook.png);
-    background-size: cover;
-    background-position: center;
+    @include m-body();
+    main{
+        min-height: $alto-main; /* Establece una altura mínima de 600px para el cuerpo */
+    }
     footer {
-        width: 100%;
-        text-align: center;
-        font-style: oblique;
-        background-color: #f79ce2;
+        @include m-footer();
     }
 }

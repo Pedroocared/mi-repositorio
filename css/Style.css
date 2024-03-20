@@ -1,8 +1,4 @@
-@font-face {
-  font-family: "Imprebooks";
-  src: url(/font/ImprebooksFont.otf);
-  font-weight: bold;
-}
+@charset "UTF-8";
 .gridContentContac {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -34,7 +30,6 @@ header nav ul li a {
   font-family: "pacifico";
   color: rgba(210, 2, 148, 0.668);
   font-size: 35px;
-  text-decoration: none;
   padding-inline: 5px;
 }
 header nav .logo {
@@ -46,6 +41,11 @@ header nav .navegacion {
   grid-row: 1/span 2;
 }
 
+@font-face {
+  font-family: "Imprebooks";
+  src: url(/font/ImprebooksFont.otf);
+  font-weight: bold;
+}
 body {
   display: flex;
   flex-direction: column; /* Cambiado a columna para alinear verticalmente */
@@ -54,10 +54,13 @@ body {
   background-size: cover;
   background-position: center;
 }
+body main {
+  min-height: 850px; /* Establece una altura mínima de 600px para el cuerpo */
+}
 body footer {
   width: 100%;
   text-align: center;
-  font-style: oblique;
+  font-style: "oblique";
   background-color: #f79ce2;
 }
 
@@ -76,7 +79,7 @@ body footer {
 }
 
 main {
-  justify-content: c center;
+  justify-content: center;
   text-align: center;
 }
 main h1 {
