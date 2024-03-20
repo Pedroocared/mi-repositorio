@@ -1,0 +1,55 @@
+
+$fuente-h2-3:'pacifico';
+$color-texto: #f79ce2;
+$size-texto-2-3: 35px;
+$padding-texto:5px;
+$size-img-logo:200px;
+$size-parrafos:20px;
+$align-centertext:center;
+$font-local: 'Imprebooks';
+$size-principalfont: 50px;
+
+@mixin estiloshsection{
+    font-family: $fuente-h2-3;
+    color: $color-texto;
+    font-size: $size-texto-2-3;
+    padding-inline:$padding-texto;
+}
+
+@mixin parrafos{
+    text-align: $align-centertext;
+    font-family: $fuente-h2-3;
+    font-size: $size-parrafos;
+}
+
+@mixin h1{
+    text-align: $align-centertext;
+    font-family:$font-local;
+    font-size: $size-principalfont
+}
+
+
+main {
+    justify-content: c$align-centertext;
+    text-align: $align-centertext;
+    h1{
+        @include h1();
+
+    }
+    p{
+        @include parrafos();
+
+    }
+    section{
+        h2{
+            @include estiloshsection();
+        }
+
+        div{
+            img{
+                width: $size-img-logo;
+            }
+        }
+        
+    }
+}

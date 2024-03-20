@@ -1,338 +1,102 @@
 @font-face {
-    font-family: 'Imprebooks';
-    src: url(/font/ImprebooksFont.otf);
-    font-weight: bold;
+  font-family: "Imprebooks";
+  src: url(/font/ImprebooksFont.otf);
+  font-weight: bold;
 }
-h1{
-    font-family: 'Imprebooks';
-    font-size: 50px;
+.gridContentContac {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: 0;
 }
-.FormatoTitulo {
-
-    text-align: center;
-    font-family: 'Imprebooks';
-    font-size: 50px;
-    color: rgba(210, 2, 148, 0.668);
-    justify-content: center;
-    padding-top: 0px;
-
+.gridContentContac .gridItem {
+  margin: 25px;
+  padding: 25px;
 }
 
-.logo {
-    background-color: #f79ce2;
-    border-radius: 50%;
-    max-width: 200px;
+header nav {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: 1fr;
 }
-
-header {
-    
-    display: block;
-    justify-content: center;
-
-    a {
-        display: flex;
-        justify-content: center;
-    }
-
-    nav {
-        display: flex;
-
-        
-
-        justify-content: center;
-
-
-        ul {
-           
-
-            li {
-                display: inline-block;
-                background-color: #f79ce2;
-                padding: 25px;
-                margin: 25px;
-                border-radius: 15%;
-                a {
-
-                    font-family: 'pacifico';
-                    color: rgba(210, 2, 148, 0.668);
-                    font-size: 35px;
-                    text-decoration: none;
-                    padding-inline: 25px;
-                    
-
-
-                }
-            }
-        }
-    }
+header nav img {
+  width: 200px;
+  height: 200px;
 }
-.boton-pop:hover{
-    font-family: 'pacifico';
-    color: rgba(7, 7,  7, 0.668);
-    font-size: 35px;
-    text-decoration: none;
-    padding-inline: 25px;
+header nav ul {
+  margin-top: 80px;
+  text-align: center;
 }
-
-
-h2 {
-    font-family: 'Pacifico';
-    color: rgba(210, 2, 148, 0.668);
-    font-size: 35px;
+header nav ul li {
+  display: inline;
+  margin: 10px;
 }
-
-h3 {
-    font-family: 'Pacifico';
-    color: rgba(210, 2, 148, 0.668);
+header nav ul li a {
+  font-family: "pacifico";
+  color: rgba(210, 2, 148, 0.668);
+  font-size: 35px;
+  text-decoration: none;
+  padding-inline: 5px;
 }
-
-.textespecial {
-    font-family: 'Imprebooks';
-    font-size: 30px;
-    text-align: center;
-
+header nav .logo {
+  grid-column: 1/span 2;
+  grid-row: 1/span 2;
+}
+header nav .navegacion {
+  grid-column: 2/span 6;
+  grid-row: 1/span 2;
 }
 
 body {
-   background-image: url(/img/fondo_imprebook.png);
-   background-size: cover ;
-   background-position: center;
-
-    main {
-
-        text-align: center;
-    }
-
-    footer {
-        text-align: center;
-        font-style: oblique;
-        background-color: #f79ce2;
-    }
+  display: flex;
+  flex-direction: column; /* Cambiado a columna para alinear verticalmente */
+  align-items: center; /* Centra horizontalmente todo el contenido */
+  background-image: url(/img/fondo_imprebook.png);
+  background-size: cover;
+  background-position: center;
+}
+body footer {
+  width: 100%;
+  text-align: center;
+  font-style: oblique;
+  background-color: #f79ce2;
 }
 
-.personaliza {
-
-    max-width: 300px;
-    height: 300; 
-
+.gridcontent_pers {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  grid-gap: 25px;
+}
+.gridcontent_pers .gridresponmin_item {
+  grid-row: 1/span 2;
+}
+.gridcontent_pers .gridresponmin_item img {
+  width: 300px;
+  max-width: auto;
 }
 
-
-.gridcontent_pers{
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(1, 1fr) ;
-
-    grid-gap: 25px;
-
-
-
+main {
+  justify-content: c center;
+  text-align: center;
 }
-.gridresponmin_item{
-    grid-row: 1 / span 2;
-
-    
+main h1 {
+  text-align: center;
+  font-family: "Imprebooks";
+  font-size: 50px;
 }
-#Esquineros{
-
-    grid-column: 1 / span 2;
-    grid-row: 2 / span 2;
-    
-    
+main p {
+  text-align: center;
+  font-family: "pacifico";
+  font-size: 20px;
 }
-
-#Elasticos{
-    grid-column: 2 / span 3;
-    grid-row: 2 / span 2;
-
+main section h2 {
+  font-family: "pacifico";
+  color: #f79ce2;
+  font-size: 35px;
+  padding-inline: 5px;
+}
+main section div img {
+  width: 200px;
 }
 
-#Ojetillos {
-    grid-column: 3 / span 4;
-    grid-row: 2 / span 2;
-}
-#Holografico {
-    grid-column: 4 / span 4;
-    grid-row: 2 / span 2;
-}
-
-
-.gridContentContac {
-    display: grid;
-    grid-template-columns: repeat(3 ,1fr);
-}
-
-.gridItem {
-    margin: 25px;
-    padding: 25px;
-    
-}
-@media only screen and (max-width: 600px) {
-
-    header {
-    
-        display: block;
-        justify-content: center;
-        a {
-            display: flex;
-            justify-content: center;
-        }
-    
-
-    
-        nav {
-            display: block;
-    
-            
-    
-            justify-content: center;
-    
-    
-            ul {
-               
-    
-                li {
-                    display: block;
-                    background-color: #e0dd05;
-                    justify-content: center;
-
-                    padding: 5px;
-                    margin: 5px;
-                    border-radius: 0;
-                    a {
-    
-                        font-family: 'pacifico';
-                        color: rgba(210, 2, 148, 0.668);
-                        font-size: 15px;
-                        text-decoration: none;
-                        padding-inline: 25px;
-                        
-    
-    
-                    }
-                }
-            }
-        }
-    }
-
-    .personaliza {
-
-        max-width: 300px;
-        height: 300; 
-    
-    }
-    
-    .gridcontent_pers{
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(4, 1fr) ;
-
-        grid-gap: 25px;
-    
-    
-    
-    }
-    .gridresponmin_item{
-        grid-column: 1 / span 2;
-        grid-row: auto;
-
-        
-    }
-    .gridContentContac {
-        display: grid;
-        grid-template-columns: repeat(1 ,1fr);
-    }
-    
-    .gridItem {
-        margin: 25px;
-        padding: 25px;
-        
-    }
-   
-
-}
-
-@media only screen and  (min-width: 601px) and (max-width: 768px) {
-    .logo {
-        background-color: #f74949;
-        border-radius: 50%;
-        max-width: 200px;
-    }
-    header {
-    
-        display: block;
-        justify-content: center;
- 
-    
-
-    
-        nav {
-            display: block;
-    
-            
-    
-            justify-content: center;
-    
-    
-            ul {
-               
-    
-                li {
-                    display: block;
-                    background-color: #f74949;
-                    justify-content: center;
-
-                    padding: 5px;
-                    margin: 5px;
-                    border-radius: 0;
-                    a {
-    
-                        font-family: 'pacifico';
-                        color: rgba(255, 255, 255, 0.668);
-                        font-size: 15px;
-                        text-decoration: none;
-                        padding-inline: 25px;
-                        
-    
-    
-                    }
-                }
-            }
-        }
-    }
-    .personaliza {
-
-        max-width: 300px;
-        height: 300; 
-    
-    }
-    
-    .gridcontent_pers{
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(4, 1fr) ;
-
-        grid-gap: 25px;
-    
-    
-    
-    }
-    .gridresponmin_item{
-        grid-column: 1 / span 2;
-        grid-row: auto;
-
-        
-    }
-    .gridContentContac {
-        display: grid;
-        grid-template-columns: repeat(1 ,1fr);
-    }
-    
-    .gridItem {
-        margin: 25px;
-        padding: 25px;
-        
-    }
-
-
-}
+/*# sourceMappingURL=Style.css.map */

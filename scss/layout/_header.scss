@@ -1,0 +1,40 @@
+header{
+    nav{
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-rows: 1fr;
+
+        img {
+            width: 200px;
+            height: 200px;
+        }
+        ul{
+            margin-top: 80px;
+            text-align: center;
+
+            li {
+                display: inline;
+                margin: 10px;
+
+                a {
+                    
+                    font-family: 'pacifico';
+                    color: rgba(210, 2, 148, 0.668);
+                    font-size: 35px;
+                    text-decoration: none;
+                    padding-inline: 5px;
+                }
+            }
+        }
+        .logo{
+            grid-column: 1 /  span 2;
+            grid-row: 1 / span 2;
+
+        }
+        .navegacion{
+            grid-column: 2 / span 6;
+            grid-row: 1 / span 2;
+
+        }
+    }
+}

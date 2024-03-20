@@ -1,0 +1,9 @@
+.gridContentContac {
+    display: grid;
+    grid-template-columns: repeat(3 ,1fr);
+    .gridItem {
+        margin: 25px;
+        padding: 25px;           
+    }
+    background-color: red($color: #000000);
+}
