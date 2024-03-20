@@ -47,6 +47,8 @@ header {
                 display: inline-block;
                 background-color: #f79ce2;
                 padding: 25px;
+                margin: 25px;
+                border-radius: 15%;
                 a {
 
                     font-family: 'pacifico';
@@ -90,7 +92,9 @@ h3 {
 }
 
 body {
-   
+   background-image: url(/img/fondo_imprebook.png);
+   background-size: cover ;
+   background-position: center;
 
     main {
 
@@ -105,13 +109,54 @@ body {
 }
 
 .personaliza {
-    width: 300px;
-    height: 300px;
+
+    max-width: 300px;
+    height: 300; 
+
 }
 
-ol {
-    font-family: 'Pacifico';
-    color: rgba(210, 2, 148, 0.668);
-    font-size: 20px;
-    text-align: left;
+.gridcontent_pers{
+    display: grid;
+   
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 25px 1fr;
+    grid-gap: 25px;
+
+
+
+}
+
+#Esquineros{
+
+    grid-column: 1 / span 2;
+    grid-row: 2 / span 2;
+    
+    
+}
+
+#Elasticos{
+    grid-column: 2 / span 3;
+    grid-row: 2 / span 2;
+
+}
+
+#Ojetillos {
+    grid-column: 3 / span 4;
+    grid-row: 2 / span 2;
+}
+#Holografico {
+    grid-column: 4 / span 4;
+    grid-row: 2 / span 2;
+}
+
+
+.gridContentContac {
+    display: grid;
+    grid-template-columns: repeat(3 ,1fr);
+}
+
+.gridItem {
+    margin: 25px;
+    padding: 25px;
+    
 }
