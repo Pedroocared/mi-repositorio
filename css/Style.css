@@ -19,6 +19,8 @@ h1{
 }
 
 .logo {
+    background-color: #f79ce2;
+    border-radius: 50%;
     max-width: 200px;
 }
 
@@ -115,17 +117,22 @@ body {
 
 }
 
+
 .gridcontent_pers{
     display: grid;
-   
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 25px 1fr;
+    grid-template-rows: repeat(1, 1fr) ;
+
     grid-gap: 25px;
 
 
 
 }
+.gridresponmin_item{
+    grid-row: 1 / span 2;
 
+    
+}
 #Esquineros{
 
     grid-column: 1 / span 2;
@@ -159,4 +166,153 @@ body {
     margin: 25px;
     padding: 25px;
     
+}
+@media only screen and (max-width: 600px) {
+
+    header {
+    
+        display: block;
+        justify-content: center;
+        a {
+            display: flex;
+            justify-content: center;
+        }
+    
+
+    
+        nav {
+            display: block;
+    
+            
+    
+            justify-content: center;
+    
+    
+            ul {
+               
+    
+                li {
+                    display: block;
+                    background-color: #e0dd05;
+                    justify-content: center;
+
+                    padding: 5px;
+                    margin: 5px;
+                    border-radius: 0;
+                    a {
+    
+                        font-family: 'pacifico';
+                        color: rgba(210, 2, 148, 0.668);
+                        font-size: 15px;
+                        text-decoration: none;
+                        padding-inline: 25px;
+                        
+    
+    
+                    }
+                }
+            }
+        }
+    }
+
+    .personaliza {
+
+        max-width: 300px;
+        height: 300; 
+    
+    }
+    
+    .gridcontent_pers{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, 1fr) ;
+
+        grid-gap: 25px;
+    
+    
+    
+    }
+    .gridresponmin_item{
+        grid-column: 1 / span 2;
+        grid-row: auto;
+
+        
+    }
+   
+
+}
+
+@media only screen and  (min-width: 601px) and (max-width: 768px) {
+    .logo {
+        background-color: #f74949;
+        border-radius: 50%;
+        max-width: 200px;
+    }
+    header {
+    
+        display: block;
+        justify-content: center;
+ 
+    
+
+    
+        nav {
+            display: block;
+    
+            
+    
+            justify-content: center;
+    
+    
+            ul {
+               
+    
+                li {
+                    display: block;
+                    background-color: #f74949;
+                    justify-content: center;
+
+                    padding: 5px;
+                    margin: 5px;
+                    border-radius: 0;
+                    a {
+    
+                        font-family: 'pacifico';
+                        color: rgba(255, 255, 255, 0.668);
+                        font-size: 15px;
+                        text-decoration: none;
+                        padding-inline: 25px;
+                        
+    
+    
+                    }
+                }
+            }
+        }
+    }
+    .personaliza {
+
+        max-width: 300px;
+        height: 300; 
+    
+    }
+    
+    .gridcontent_pers{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(4, 1fr) ;
+
+        grid-gap: 25px;
+    
+    
+    
+    }
+    .gridresponmin_item{
+        grid-column: 1 / span 2;
+        grid-row: auto;
+
+        
+    }
+
+
 }
