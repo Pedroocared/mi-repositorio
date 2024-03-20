@@ -2,11 +2,14 @@
 .gridContentContac {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  background-color: 0;
 }
 .gridContentContac .gridItem {
   margin: 25px;
   padding: 25px;
+  transition: 0.5s;
+}
+.gridContentContac .gridItem:hover {
+  transform: scale(1.4);
 }
 
 header nav {
@@ -17,10 +20,15 @@ header nav {
 header nav img {
   width: 200px;
   height: 200px;
+  transition: 2s;
+}
+header nav img:hover {
+  transform: scale(1.5);
 }
 header nav ul {
   margin-top: 80px;
   text-align: center;
+  transition: 0.5s;
 }
 header nav ul li {
   display: inline;
@@ -31,6 +39,9 @@ header nav ul li a {
   color: rgba(210, 2, 148, 0.668);
   font-size: 35px;
   padding-inline: 5px;
+}
+header nav ul:hover {
+  transform: scale(1.4);
 }
 header nav .logo {
   grid-column: 1/span 2;
@@ -57,11 +68,21 @@ body {
 body main {
   min-height: 850px; /* Establece una altura mínima de 600px para el cuerpo */
 }
+body .icono-wsp {
+  position: fixed;
+  right: 25px;
+  bottom: 45px;
+  transition: 1s;
+}
+body .icono-wsp:hover {
+  transform: scale(1.2);
+}
 body footer {
   width: 100%;
   text-align: center;
   font-style: "oblique";
   background-color: #f79ce2;
+  font-size: 10px;
 }
 
 .gridcontent_pers {
@@ -86,6 +107,7 @@ main h1 {
   text-align: center;
   font-family: "Imprebooks";
   font-size: 50px;
+  text-shadow: -2px 20px 6px rgba(0, 0, 0, 0.57);
 }
 main p {
   text-align: center;

@@ -45,4 +45,8 @@ node_modules/
 package-lock.json
 npm-debug.log
 .env
+
+
+# Ignorar el archivo package.json
 package.json
+

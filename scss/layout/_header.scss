@@ -12,13 +12,19 @@ $padd-textoa: 5px;
 @mixin textoa {
     font-family: $fuente-h2-3;
     color: $color-textonav;
-    font-size:$size-texto-2-3;
+    font-size: $size-texto-2-3;
     padding-inline: $padd-textoa;
+
 }
+
 
 @mixin imagen{
     width: $size-img-gen;
-    height: $size-img-gen
+    height: $size-img-gen;
+    transition: 2s;
+    &:hover {
+        transform: scale(1.5);
+    }
 }
 
 
@@ -28,6 +34,7 @@ header{
         display: grid;
         grid-template-columns: repeat(8, 1fr);
         grid-template-rows: 1fr;
+
         img {
             @include imagen();
         }
@@ -37,10 +44,18 @@ header{
             li {
                 display: inline;
                 margin: 10px;
-                a {                    
-                   @include textoa();     
+
+                a {     
+                                   
+                   @include textoa(); 
+       
                 }
+
             }
+            transition: 0.5s;
+            &:hover{
+             transform: scale(1.4);
+            }  
         }
         .logo{
             grid-column: 1 /  span 2;
@@ -53,4 +68,5 @@ header{
 
         }
     }
+  
 }
