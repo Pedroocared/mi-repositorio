@@ -1,0 +1,101 @@
+@media (max-width: 575px) {
+//VARIABLES
+$size-img-logo:50px;
+$fuente-h2-3:'pacifico';
+$size-texto-2-3: 0.8rem;
+$color-textonav: rgba(210, 2, 148, 0.668);
+$align-centertext:center;
+$size-img-gen:150px;
+$padd-textoa: 0px;
+
+
+//MIXIN
+@mixin textoa {
+    display: inline-block;
+    font-family: $fuente-h2-3;
+    color: $color-textonav;
+    font-size: $size-texto-2-3;
+    padding-inline: $padd-textoa;
+   
+    
+}
+
+@mixin imagen{
+    display: inline;
+    width: 100%;
+    margin: 30px;
+    justify-content: center;
+    width: $size-img-gen;
+    height: $size-img-gen;
+
+}
+
+header{
+    nav{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 60px 60px;
+        img {
+            @include imagen();
+        }
+        ul{
+            padding-top: 50px;
+            text-align: $align-centertext;
+            margin-left: -50px;
+            li {
+                display: inline;
+                a {                
+                   @include textoa();
+                }
+            }
+        }
+        .logo{
+            display: flex;
+            justify-content: center;
+            grid-column: 1 /  span 2;
+            grid-row: 1 / span 2;
+            max-width: 100%;
+        }
+        .navegacion{
+            grid-column: 1 / span 2;
+            grid-row: 2 / span 3;
+            
+        }
+    }
+}
+.tabletframe{
+    display: none;
+}
+.gridContentContac {
+    display: grid;
+    grid-template-columns: 1fr;
+    .gridItem {
+        margin: 25px;
+        padding: 25px;   
+        transition: 0.5s;
+        &:hover{
+         transform: scale(1.4);
+        }          
+    }
+}
+.gridcontent_pers{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr) ;
+
+    grid-gap: 25px;
+    .gridresponmin_item{
+        grid-column: 1 / span 2;
+        grid-row: auto;
+        img{
+            width: 300px;
+            max-width: auto;
+        }
+    }  
+}
+.fotoNosotros{
+    max-width: 80%;
+    height: auto;
+
+}
+}

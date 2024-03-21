@@ -146,11 +146,11 @@ main section div img {
     display: inline;
   }
   header nav ul li a {
-    display: inline;
+    display: inline-block;
     font-family: "pacifico";
     color: rgba(210, 2, 148, 0.668);
     font-size: 1rem;
-    padding-inline: 5px;
+    padding-inline: 3px;
   }
   header nav .logo {
     display: flex;
@@ -191,6 +191,80 @@ main section div img {
   .gridcontent_pers .gridresponmin_item img {
     width: 300px;
     max-width: auto;
+  }
+}
+@media (max-width: 575px) {
+  header nav {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 60px 60px;
+  }
+  header nav img {
+    display: inline;
+    width: 100%;
+    margin: 30px;
+    justify-content: center;
+    width: 150px;
+    height: 150px;
+  }
+  header nav ul {
+    padding-top: 50px;
+    text-align: center;
+    margin-left: -50px;
+  }
+  header nav ul li {
+    display: inline;
+  }
+  header nav ul li a {
+    display: inline-block;
+    font-family: "pacifico";
+    color: rgba(210, 2, 148, 0.668);
+    font-size: 0.8rem;
+    padding-inline: 0px;
+  }
+  header nav .logo {
+    display: flex;
+    justify-content: center;
+    grid-column: 1/span 2;
+    grid-row: 1/span 2;
+    max-width: 100%;
+  }
+  header nav .navegacion {
+    grid-column: 1/span 2;
+    grid-row: 2/span 3;
+  }
+  .tabletframe {
+    display: none;
+  }
+  .gridContentContac {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .gridContentContac .gridItem {
+    margin: 25px;
+    padding: 25px;
+    transition: 0.5s;
+  }
+  .gridContentContac .gridItem:hover {
+    transform: scale(1.4);
+  }
+  .gridcontent_pers {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+    grid-gap: 25px;
+  }
+  .gridcontent_pers .gridresponmin_item {
+    grid-column: 1/span 2;
+    grid-row: auto;
+  }
+  .gridcontent_pers .gridresponmin_item img {
+    width: 300px;
+    max-width: auto;
+  }
+  .fotoNosotros {
+    max-width: 80%;
+    height: auto;
   }
 }
 

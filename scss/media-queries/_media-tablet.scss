@@ -7,18 +7,17 @@ $size-texto-2-3: 1rem;
 $color-textonav: rgba(210, 2, 148, 0.668);
 $align-centertext:center;
 $size-img-gen:150px;
-$padd-textoa: 5px;
+$padd-textoa: 3px;
 
 
 //MIXIN
 @mixin textoa {
-    display: inline;
+    display: inline-block;
     font-family: $fuente-h2-3;
     color: $color-textonav;
     font-size: $size-texto-2-3;
     padding-inline: $padd-textoa;
-
-
+    
 }
 
 @mixin imagen{
@@ -36,8 +35,6 @@ header{
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 60px 60px;
-        
-        
         img {
             @include imagen();
         }
@@ -46,29 +43,21 @@ header{
             text-align: $align-centertext;
             li {
                 display: inline;
-                
-                
-                
                 a {                
                    @include textoa();
                 }
             }
-
         }
         .logo{
-           
             display: flex;
             justify-content: center;
             grid-column: 1 /  span 2;
             grid-row: 1 / span 2;
             max-width: 100%;
-
         }
         .navegacion{
             grid-column: 1 / span 2;
             grid-row: 2 / span 3;
-
-
         }
     }
 }
@@ -96,7 +85,6 @@ header{
     .gridresponmin_item{
         grid-column: 1 / span 2;
         grid-row: auto;
-
         img{
             width: 300px;
             max-width: auto;
