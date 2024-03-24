@@ -2,11 +2,9 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(1, 1fr) ;
-
     grid-gap: 25px;
     .gridresponmin_item{
         grid-row: 1 / span 2;
-
         img{
             width: 300px;
             max-width: auto;

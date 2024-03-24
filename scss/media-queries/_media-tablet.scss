@@ -17,7 +17,6 @@ $padd-textoa: 3px;
     color: $color-textonav;
     font-size: $size-texto-2-3;
     padding-inline: $padd-textoa;
-    
 }
 
 @mixin imagen{
@@ -27,7 +26,6 @@ $padd-textoa: 3px;
     justify-content: center;
     width: $size-img-gen;
     height: $size-img-gen;
-
 }
 
 header{
@@ -80,7 +78,6 @@ header{
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4, 1fr) ;
-
     grid-gap: 25px;
     .gridresponmin_item{
         grid-column: 1 / span 2;

@@ -267,5 +267,78 @@ main section div img {
     height: auto;
   }
 }
+@media (min-width: 768px) and (max-width: 1236px) {
+  header nav {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: 1fr;
+  }
+  header nav img {
+    width: 200px;
+    height: 200px;
+    transition: 1s;
+  }
+  header nav img:hover {
+    transform: scale(1.5);
+  }
+  header nav ul {
+    margin-top: 80px;
+    text-align: center;
+    transition: 1s;
+  }
+  header nav ul li {
+    display: inline;
+    margin: 5px;
+  }
+  header nav ul li a {
+    font-family: "pacifico";
+    color: rgba(210, 2, 148, 0.668);
+    font-size: 2vw;
+    padding-inline: 5px;
+    width: 0vw;
+  }
+  header nav ul:hover {
+    transform: scale(1.2);
+  }
+  header nav .logo {
+    grid-column: 1/span 2;
+    grid-row: 1/span 2;
+    padding-top: 30px;
+    width: 15vw;
+    height: 15vw;
+  }
+  header nav .navegacion {
+    grid-column: 2/span 6;
+    grid-row: 1/span 2;
+  }
+  .gridContentContac {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .gridContentContac .gridItem {
+    margin: 25px;
+    padding: 25px;
+    transition: 0.5s;
+  }
+  .gridContentContac .gridItem:hover {
+    transform: scale(1.4);
+  }
+  .gridcontent_pers {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(2, 1fr);
+    grid-gap: 25px;
+  }
+  .gridcontent_pers .gridresponmin_item {
+    grid-column: auto;
+    grid-row: auto;
+  }
+  .gridcontent_pers .gridresponmin_item img {
+    width: 300px;
+    height: 300px;
+    max-width: auto;
+    margin-bottom: 25px;
+  }
+}
 
 /*# sourceMappingURL=Style.css.map */

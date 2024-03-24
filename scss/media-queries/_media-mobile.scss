@@ -27,7 +27,6 @@ $padd-textoa: 0px;
     justify-content: center;
     width: $size-img-gen;
     height: $size-img-gen;
-
 }
 
 header{
@@ -58,8 +57,7 @@ header{
         }
         .navegacion{
             grid-column: 1 / span 2;
-            grid-row: 2 / span 3;
-            
+            grid-row: 2 / span 3;   
         }
     }
 }
