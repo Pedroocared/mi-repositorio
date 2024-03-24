@@ -87,7 +87,11 @@ header{
         grid-row: auto;
         img{
             width: 300px;
+            height: 300px;
             max-width: auto;
+        }
+        &:hover {
+            transform: none;
         }
     }  
 }

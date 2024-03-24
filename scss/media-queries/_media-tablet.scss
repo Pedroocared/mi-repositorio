@@ -85,6 +85,8 @@ header{
         img{
             width: 300px;
             max-width: auto;
+        }&:hover {
+            transform: none;
         }
     }  
 }

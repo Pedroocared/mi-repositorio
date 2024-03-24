@@ -20,8 +20,9 @@ $difle-direccion: column;
     width: $ancho-horizon;
     text-align: $align-centertext;
     font-style: $Style-font;
-    background-color: $color-texto-fondo;
+    background: linear-gradient(to bottom, #ffffff, #f79ce2);
     font-size: 10px;
+    
 }
 @mixin m-body{
     display: $display-flexbody;
@@ -48,6 +49,8 @@ body {
         }
     }
     footer {
+        
         @include m-footer();
+        
     }
 }
