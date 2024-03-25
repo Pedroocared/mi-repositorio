@@ -54,14 +54,14 @@ header nav .navegacion {
 
 @font-face {
   font-family: "Imprebooks";
-  src: url(/font/ImprebooksFont.otf);
+  src: url(font/ImprebooksFont.otf);
   font-weight: bold;
 }
 body {
   display: flex;
   flex-direction: column; /* Cambiado a columna para alinear verticalmente */
   align-items: center; /* Centra horizontalmente todo el contenido */
-  background-image: url(/img/fondo_imprebook.png);
+  background-image: url(https://raw.githubusercontent.com/Pedroocared/mi-repositorio/main/img/fondo_imprebook.png);
   background-size: cover;
   background-position: center;
 }
@@ -90,6 +90,7 @@ body footer {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(1, 1fr);
   grid-gap: 25px;
+  margin-bottom: auto;
 }
 .gridcontent_pers .gridresponmin_item {
   grid-row: 1/span 2;
